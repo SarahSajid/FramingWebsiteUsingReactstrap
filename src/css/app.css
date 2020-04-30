@@ -2,3 +2,17 @@
   text-align: center;
 }
 
+.nav-bar {
+  padding: 10px 30px;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.nav-item {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
