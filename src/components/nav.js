@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../css/app.css';
 import {
   Collapse,
   Navbar,
@@ -20,20 +21,14 @@ const NavBar = (props) => {
 
   return (
     <div>
-      <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">FRAMEBOSS</NavbarBrand>
+      <Navbar color="light" light expand="md" className="nav-bar">
+        <NavbarBrand className="navbar-brand" href="/">FRAMEBOSS</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
-            <NavItem>
-              <NavLink href="/components/">Components</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
-            </NavItem>
-            <UncontrolledDropdown nav inNavbar>
+          <Nav className="ml-auto" navbar>
+            <UncontrolledDropdown nav inNavbar className="nav-item">
               <DropdownToggle nav caret>
-                Options
+                SERVICES
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>
@@ -42,14 +37,28 @@ const NavBar = (props) => {
                 <DropdownItem>
                   Option 2
                 </DropdownItem>
-                <DropdownItem divider />
+              </DropdownMenu>
+            </UncontrolledDropdown>
+            <UncontrolledDropdown nav inNavbar className="nav-item">
+              <DropdownToggle nav caret>
+                FRAMES
+              </DropdownToggle>
+              <DropdownMenu right>
                 <DropdownItem>
-                  Reset
+                  Option 1
+                </DropdownItem>
+                <DropdownItem>
+                  Option 2
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
+            <NavItem className="nav-item">
+              <NavLink href="/">BLOG</NavLink>
+            </NavItem>
+            <NavItem className="nav-item mr-0">
+              <NavLink href="/">CONTACT US</NavLink>
+            </NavItem>
           </Nav>
-          <NavbarText>Simple Text</NavbarText>
         </Collapse>
       </Navbar>
     </div>
