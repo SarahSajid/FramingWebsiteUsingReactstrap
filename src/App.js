@@ -19,6 +19,10 @@ import abstractThree from './assets/abstract-3.png';
 import abstractFour from './assets/abstract-4.png';
 import abstractFive from './assets/abstract-5.png';
 import abstractSix from './assets/abstract-6.png';
+import designOne from './assets/design-1.png';
+import designTwo from './assets/design-2.png';
+import designThree from './assets/design-3.png';
+import designFour from './assets/design-4.png';
 
 function App() {
   return (
@@ -154,6 +158,37 @@ function App() {
           </Row>
         </Container>
       </div>
+      <br/>
+      <br/>
+      <div className="text-center" style={{margin: '0 40px', display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+        <p style={{color: '#112D46', fontWeight: '500', fontSize: '30px', marginBottom: '0'}}>Our Impressive Works</p>
+        <div><img src={separator} style={{width: '200px'}}></img></div>
+        <p style={{color: 'gray'}}>Design A Custom Frame For Photos, Art, And More.</p>
+        <Container>
+          <Row>
+            <Col xs={6} style={{display: 'flex', alignItems: 'center'}}>
+              <img src={designOne} style={{width: '100%'}}></img>
+            </Col>
+            <Col xs={6}>
+              <Container>
+                <Row>
+                  <Col xs="6" className="framing-element-container">
+                    <img src={designTwo} style={{width: '100%'}}></img>
+                  </Col>
+                  <Col xs="6" className="framing-element-container">
+                    <img src={designThree} style={{width: '100%'}}></img>
+                  </Col>
+                  <Col xs="12" className="framing-element-container">
+                    <img src={designFour} style={{width: '100%'}}></img>
+                  </Col>
+                </Row>
+              </Container>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+      <br/>
+      <br/>
     </div>
   );
 }
