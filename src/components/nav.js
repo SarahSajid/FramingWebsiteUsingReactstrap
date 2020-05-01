@@ -14,6 +14,8 @@ import {
   DropdownItem,
   NavbarText
 } from 'reactstrap';
+import cartIcon from '../assets/cart-icon.svg';
+import userAccountIcon from '../assets/user-account-icon.svg';
 
 const NavBar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -57,6 +59,16 @@ const NavBar = (props) => {
             </NavItem>
             <NavItem className="nav-item mr-0">
               <NavLink href="/">CONTACT US</NavLink>
+            </NavItem>
+            <NavItem className="nav-item mr-0">
+              <NavLink href="/" style={{marginLeft: '30px'}}>
+                <img src={userAccountIcon} style={{width: '22px'}}></img>
+              </NavLink>
+            </NavItem>
+            <NavItem className="nav-item mr-0">
+              <NavLink href="/">
+                <img src={cartIcon} style={{width: '24px'}}></img>
+              </NavLink>
             </NavItem>
           </Nav>
         </Collapse>
