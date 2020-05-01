@@ -13,6 +13,12 @@ import keychain from './assets/keychain.png';
 import minion from './assets/minion.png';
 import photography from './assets/photography.png';
 import textile from './assets/textile.png';
+import abstractOne from './assets/abstract-1.png';
+import abstractTwo from './assets/abstract-2.png';
+import abstractThree from './assets/abstract-3.png';
+import abstractFour from './assets/abstract-4.png';
+import abstractFive from './assets/abstract-5.png';
+import abstractSix from './assets/abstract-6.png';
 
 function App() {
   return (
@@ -94,6 +100,60 @@ function App() {
       </div>
       <br/>
       <br/>
+      <div className="text-center" style={{margin: '0 40px', display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+        <p style={{color: '#112D46', fontWeight: '500', fontSize: '30px', marginBottom: '0'}}>Feature Product</p>
+        <div><img src={separator} style={{width: '200px'}}></img></div>
+        <p style={{color: 'gray'}}>Design A Custom Frame For Photos, Art, And More.</p>
+        <Container>
+          <Row>
+            <Col xs={4} style={{display: 'flex', alignItems: 'center', backgroundColor: '#f0f0ee'}}>
+              <img src={springFrame} style={{width: '100%'}}></img>
+            </Col>
+            <Col xs={8}>
+              <Container>
+                <Row>
+                  <Col xs="4" className="framing-element-container">
+                    <div  className="abstract-element">
+                      <img src={abstractSix} className="framing-element-img"></img>
+                    </div>
+                    <p className="text-left abstract-element-desc">Dover</p>
+                  </Col>
+                  <Col xs="4" className="framing-element-container">
+                    <div  className="abstract-element">
+                      <img src={abstractTwo} className="framing-element-img"></img>
+                    </div>
+                    <p className="text-left abstract-element-desc">Marquette</p>
+                  </Col>
+                  <Col xs="4" className="framing-element-container">
+                    <div  className="abstract-element">
+                      <img src={abstractThree} className="framing-element-img"></img>
+                    </div>
+                    <p className="text-left abstract-element-desc">Wren</p>
+                  </Col>
+                  <Col xs="4" className="framing-element-container">
+                    <div  className="abstract-element">
+                      <img src={abstractFour} className="framing-element-img"></img>
+                    </div>
+                    <p className="text-left abstract-element-desc">Mercer</p>
+                  </Col>
+                  <Col xs="4" className="framing-element-container">
+                    <div  className="abstract-element">
+                      <img src={abstractFive} className="framing-element-img"></img>
+                    </div>
+                    <p className="text-left abstract-element-desc">Everette</p>
+                  </Col>
+                  <Col xs="4" className="framing-element-container">
+                    <div  className="abstract-element">
+                      <img src={abstractSix} className="framing-element-img"></img>
+                    </div>
+                    <p className="text-left abstract-element-desc">Mandalay</p>
+                  </Col>
+                </Row>
+              </Container>
+            </Col>
+          </Row>
+        </Container>
+      </div>
     </div>
   );
 }
