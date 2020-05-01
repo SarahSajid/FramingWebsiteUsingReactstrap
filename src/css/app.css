@@ -35,3 +35,13 @@
   color: #112D46;
   font-weight: 400;
 }
+
+.abstract-element {
+  background-color: #f1f0ee;
+  padding: 30px 20px;
+}
+
+.abstract-element-desc {
+  color: #112D46;
+  font-weight: 600;
+}
