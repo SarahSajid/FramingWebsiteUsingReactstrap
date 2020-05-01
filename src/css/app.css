@@ -16,3 +16,22 @@
   margin-right: 10px;
 }
 
+.framing-element-container {
+  padding: 10px;
+}
+
+.framing-element {
+  background-color: #f1f0ee;
+  padding: 30px 20px;
+  margin-bottom: 20px;
+}
+
+.framing-element-img {
+  width: 100%;
+  background-color: #fff;
+}
+
+.framing-element-desc {
+  color: #112D46;
+  font-weight: 400;
+}
